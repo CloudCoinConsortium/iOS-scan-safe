@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudCoinIOS", "CloudCoinIOS\CloudCoinIOS.csproj", "{B6987EF8-3EEE-4D5A-A6CF-64CEF3458A74}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6987EF8-3EEE-4D5A-A6CF-64CEF3458A74}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{B6987EF8-3EEE-4D5A-A6CF-64CEF3458A74}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{B6987EF8-3EEE-4D5A-A6CF-64CEF3458A74}.Release|iPhone.ActiveCfg = Release|iPhone
+		{B6987EF8-3EEE-4D5A-A6CF-64CEF3458A74}.Release|iPhone.Build.0 = Release|iPhone
+		{B6987EF8-3EEE-4D5A-A6CF-64CEF3458A74}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{B6987EF8-3EEE-4D5A-A6CF-64CEF3458A74}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{B6987EF8-3EEE-4D5A-A6CF-64CEF3458A74}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{B6987EF8-3EEE-4D5A-A6CF-64CEF3458A74}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal

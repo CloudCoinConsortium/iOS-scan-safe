@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<component format="1" id="ZipArchive">
+  <name>ZipArchive</name>
+  <publisher>Xamarin Inc</publisher>
+  <publisher-url>https://xamarin.com</publisher-url>
+  <src-url>https://github.com/xamarin/XamarinComponents/tree/master/iOS/ZipArchive</src-url>
+  <version>1.4.0.2</version>
+  <summary>Add zip and unzip archive ability to your Xamarin.iOS project</summary>
+  <samples>
+    <sample id="ZipArchiveSample">
+      <name>Zip Archive Sample</name>
+      <summary>Zip Archive Sample</summary>
+    </sample>
+  </samples>
+</component>
