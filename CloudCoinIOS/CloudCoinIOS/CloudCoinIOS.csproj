@@ -224,6 +224,24 @@
     <Compile Include="ViewControllers\ZipPasswordViewController.designer.cs">
       <DependentUpon>ZipPasswordViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Core2.0\Banker.cs" />
+    <Compile Include="Core2.0\CloudCoin.cs" />
+    <Compile Include="Core2.0\CoinUtils.cs" />
+    <Compile Include="Core2.0\Config.cs" />
+    <Compile Include="Core2.0\DetectEventArgs.cs" />
+    <Compile Include="Core2.0\FileSystem.cs" />
+    <Compile Include="Core2.0\FixitHelper.cs" />
+    <Compile Include="Core2.0\Frack_Fixer.cs" />
+    <Compile Include="Core2.0\IFileSystem.cs" />
+    <Compile Include="Core2.0\Logger.cs" />
+    <Compile Include="Core2.0\MultiDetectRequest.cs" />
+    <Compile Include="Core2.0\Network.cs" />
+    <Compile Include="Core2.0\Node.cs" />
+    <Compile Include="Core2.0\ProgressChangedEventArgs.cs" />
+    <Compile Include="Core2.0\RAIDA.cs" />
+    <Compile Include="Core2.0\Response.cs" />
+    <Compile Include="Core2.0\Stack.cs" />
+    <Compile Include="Core2.0\Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\backicons.png" />

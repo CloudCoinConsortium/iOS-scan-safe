@@ -1,17 +1,19 @@
 ﻿<Properties StartupConfiguration="{B6987EF8-3EEE-4D5A-A6CF-64CEF3458A74}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CloudCoinIOS/Info.plist">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CloudCoinIOS/Core2.0/RAIDA.cs">
     <Files>
       <File FileName="CloudCoinIOS/Info.plist" />
-      <File FileName="CloudCoinIOS/ViewControllers/EnterPassViewController.cs" Line="82" Column="1" />
-      <File FileName="CloudCoinIOS/Core/Safe.cs" Line="526" Column="9" />
-      <File FileName="CloudCoinIOS/Core/IOModels.cs" Line="255" Column="54" />
-      <File FileName="CloudCoinIOS/ViewCells/AuthHeaderCell.cs" Line="1" Column="1" />
+      <File FileName="CloudCoinIOS/ViewControllers/EnterPassViewController.cs" Line="43" Column="49" />
+      <File FileName="CloudCoinIOS/Core/Safe.cs" Line="543" Column="5" />
+      <File FileName="CloudCoinIOS/Core/IOModels.cs" Line="99" Column="35" />
+      <File FileName="CloudCoinIOS/ViewCells/AuthHeaderCell.cs" Line="22" Column="1" />
+      <File FileName="CloudCoinIOS/Core2.0/IFileSystem.cs" Line="10" Column="16" />
+      <File FileName="CloudCoinIOS/Core2.0/RAIDA.cs" Line="36" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Volumes/Local/xamarin/CloudCoinIOS-master/CloudCoinIOS/CloudCoinIOS/ViewControllers/ExportViewController.cs" relfile="CloudCoinIOS/ViewControllers/ExportViewController.cs" line="116" column="39" />
+      <Breakpoint file="/Volumes/Working/CloudCoin/iOS/CloudCoinIOS/CloudCoinIOS/ViewControllers/ExportViewController.cs" relfile="CloudCoinIOS/ViewControllers/ExportViewController.cs" line="116" column="39" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
