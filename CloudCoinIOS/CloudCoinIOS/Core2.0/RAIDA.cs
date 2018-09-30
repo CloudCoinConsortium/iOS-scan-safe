@@ -5,7 +5,6 @@ using System.Collections;
 using System.Threading.Tasks;
 using System.Diagnostics;
 using System.Linq;
-using CloudCoinCoreDirectory;
 
 namespace CloudCoinCore
 {

@@ -69,11 +69,14 @@ namespace CloudCoinIOS
 				if (coinFile != null && coinFile.IsValidFile)
 				{
 					isPasswordForSafe = await ShowAlert("Confirmation", confirmMsg, new string[] { "Yes", "No" });
-					if (isPasswordForSafe == 0)
+                    btnCancel.Hidden = true;
+                    btnImport.Hidden = true;
+                    CloudCoinCore.RAIDA.GetInstance().GetMultiDetectTasks(coinFile.Coins);
+
+                    if (isPasswordForSafe == 0)
 					{
-						btnCancel.Hidden = true;
-						btnImport.Hidden = true;
-						RAIDA.Instance.Detect(coinFile.Coins, true);
+						//RAIDA.Instance.Detect(coinFile.Coins, true);
+
 
                         DetectHandler.Invoke(this, true);
 						//will implement the Safe source.
@@ -81,10 +84,7 @@ namespace CloudCoinIOS
 					}
 					else
 					{
-						btnCancel.Hidden = true;
-						btnImport.Hidden = true;
-						RAIDA.Instance.Detect(coinFile.Coins, false);
-
+                        //RAIDA.Instance.Detect(coinFile.Coins, false);
                         DetectHandler.Invoke(this, false);
 					}
 

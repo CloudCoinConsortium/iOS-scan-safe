@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CloudCoinCoreDirectory
+namespace CloudCoinCore
 {
     public class Network
     {
