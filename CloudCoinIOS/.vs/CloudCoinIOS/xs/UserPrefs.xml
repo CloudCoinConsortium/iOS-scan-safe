@@ -1,22 +1,23 @@
 ﻿<Properties StartupConfiguration="{B6987EF8-3EEE-4D5A-A6CF-64CEF3458A74}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CloudCoinIOS/ViewControllers/ImportViewController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CloudCoinIOS/Core2.0/Node.cs">
     <Files>
-      <File FileName="CloudCoinIOS/ViewControllers/EnterPassViewController.cs" Line="55" Column="54" />
-      <File FileName="CloudCoinIOS/Core/Safe.cs" Line="95" Column="21" />
-      <File FileName="CloudCoinIOS/Core/IOModels.cs" Line="93" Column="33" />
-      <File FileName="CloudCoinIOS/ViewCells/AuthHeaderCell.cs" Line="18" Column="13" />
-      <File FileName="CloudCoinIOS/Core2.0/RAIDA.cs" Line="94" Column="52" />
-      <File FileName="CloudCoinIOS/ViewControllers/ImportViewController.cs" Line="76" Column="28" />
-      <File FileName="CloudCoinIOS/Core/RAIDA.cs" Line="132" Column="68" />
+      <File FileName="CloudCoinIOS/ViewControllers/EnterPassViewController.cs" Line="41" Column="49" />
+      <File FileName="CloudCoinIOS/Core/Safe.cs" Line="190" Column="31" />
+      <File FileName="CloudCoinIOS/Core2.0/Banker.cs" Line="25" Column="38" />
+      <File FileName="CloudCoinIOS/Core/RAIDA.cs" Line="196" Column="67" />
+      <File FileName="CloudCoinIOS/Core/CloudCoin.cs" Line="16" Column="77" />
+      <File FileName="CloudCoinIOS/Core2.0/CloudCoin.cs" Line="320" Column="29" />
+      <File FileName="CloudCoinIOS/Core2.0/Node.cs" Line="472" Column="48" />
+      <File FileName="CloudCoinIOS/Core2.0/RAIDA.cs" Line="153" Column="57" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Volumes/Working/CloudCoin/iOS/CloudCoinIOS/CloudCoinIOS/ViewControllers/ExportViewController.cs" relfile="CloudCoinIOS/ViewControllers/ExportViewController.cs" line="116" column="39" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.CloudCoinIOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.012413FA-8483-49BD-BAE6-597FFA2122C5" automaticSigning="False" />
+  <MonoDevelop.Ide.ItemProperties.CloudCoinIOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.eeef4730b8f9ecdf95c8994c3904326b713973d1" automaticSigning="False" />
   <MultiItemStartupConfigurations />
 </Properties>

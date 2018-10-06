@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
@@ -6,6 +7,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using CloudCoinCore;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using RestSharp;
@@ -22,6 +24,9 @@ namespace CloudCoin_SafeScan
         public const short NODEQNTY = 25;
         public const short MINTRUSTEDNODES4AUTH = 8;
         public Node[] NodesArray = new Node[NODEQNTY];
+        public Response[,] responseArrayMulti;
+        public MultiDetectRequest multiRequest;
+
         public enum Countries
         {
             Australia,
@@ -60,7 +65,7 @@ namespace CloudCoin_SafeScan
             }
         }
         public EchoResponse[] EchoStatus = new EchoResponse[NODEQNTY];
-
+        public IEnumerable<CloudCoin> coins;
 
         private RAIDA()
         {
@@ -127,6 +132,71 @@ namespace CloudCoin_SafeScan
         public void onStackScanCompleted(StackScanCompletedEventArgs e)
         {
             StackScanCompleted?.Invoke(this, e);
+        }
+
+        public List<Func<Task>> GetMultiDetectTasks(CloudCoin[] coins, int milliSecondsToTimeOut, bool changeANs = true)
+        {
+            this.coins = coins;
+
+            responseArrayMulti = new Response[Config.NodeCount, coins.Length];
+
+            int[] nns = new int[coins.Length];
+            int[] sns = new int[coins.Length];
+
+
+            String[][] ans = new String[Config.NodeCount][];
+            String[][] pans = new String[Config.NodeCount][];
+
+            int[] dens = new int[coins.Length];//Denominations
+                                               //Stripe the coins
+            var detectTasks = new List<Func<Task>>
+            {
+
+            };
+
+            List<Func<Task>> multiTaskList = new List<Func<Task>>();
+
+            //List<Task<Response[]>> multiTaskList = new List<Task<Response[]>>();
+            for (int i = 0; i < coins.Length; i++)//For every coin
+            {
+                //if (changeANs)
+                    coins[i].generatePans();
+                //else
+                    //coins[i].SetAnsToPans();
+                //coins[i].setAnsToPans();
+                nns[i] = coins[i].nn;
+                sns[i] = coins[i].sn;
+                dens[i] = coins[i].getDenomination();
+
+            }
+            multiRequest = new MultiDetectRequest();
+            multiRequest.timeout = Config.milliSecondsToTimeOut;
+            for (int nodeNumber = 0; nodeNumber < Config.NodeCount; nodeNumber++)
+            {
+
+                ans[nodeNumber] = new String[coins.Length];
+                pans[nodeNumber] = new String[coins.Length];
+
+                for (int i = 0; i < coins.Length; i++)//For every coin
+                {
+                    ans[nodeNumber][i] = coins[i].an[nodeNumber];
+                    pans[nodeNumber][i] = coins[i].pans[nodeNumber];
+
+                }
+                multiRequest.an[nodeNumber] = ans[nodeNumber];
+                multiRequest.pan[nodeNumber] = pans[nodeNumber];
+                multiRequest.nn = nns;
+                multiRequest.sn = sns;
+                multiRequest.d = dens;
+            }
+
+
+            for (int nodeNumber = 0; nodeNumber < Config.NodeCount; nodeNumber++)
+            {
+                detectTasks.Add(NodesArray[nodeNumber].MultiDetect);
+            }
+
+            return detectTasks;
         }
 
         public void Detect(CoinStack stack, bool isCoinToBeImported)

@@ -71,7 +71,8 @@ namespace CloudCoinIOS
 					isPasswordForSafe = await ShowAlert("Confirmation", confirmMsg, new string[] { "Yes", "No" });
                     btnCancel.Hidden = true;
                     btnImport.Hidden = true;
-                    CloudCoinCore.RAIDA.GetInstance().GetMultiDetectTasks(coinFile.Coins);
+                    //CloudCoinCore.RAIDA.GetInstance().GetMultiDetectTasks(coinFile.Coins);
+                    RAIDA.Instance.Detect(coinFile.Coins, true);
 
                     if (isPasswordForSafe == 0)
 					{

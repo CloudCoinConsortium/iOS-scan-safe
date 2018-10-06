@@ -111,6 +111,41 @@ namespace CloudCoin_SafeScan
 			isValidated = Validate();
         }
 
+        public int getDenomination()
+        {
+            int nom = 0;
+            if ((sn < 1))
+            {
+                nom = 0;
+            }
+            else if ((sn < 2097153))
+            {
+                nom = 1;
+            }
+            else if ((sn < 4194305))
+            {
+                nom = 5;
+            }
+            else if ((sn < 6291457))
+            {
+                nom = 25;
+            }
+            else if ((sn < 14680065))
+            {
+                nom = 100;
+            }
+            else if ((sn < 16777217))
+            {
+                nom = 250;
+            }
+            else
+            {
+                nom = '0';
+            }
+
+            return nom;
+        }//end get denomination
+
         //Constructor from file with Coin
         public CloudCoin(Stream jpegFS)
         {
