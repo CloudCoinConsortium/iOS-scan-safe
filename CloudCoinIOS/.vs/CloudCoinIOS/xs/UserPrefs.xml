@@ -1,14 +1,16 @@
 ﻿<Properties StartupConfiguration="{B6987EF8-3EEE-4D5A-A6CF-64CEF3458A74}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CloudCoinIOS/Core2.0/Node.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CloudCoinIOS/ViewControllers/ImportViewController.cs">
     <Files>
-      <File FileName="CloudCoinIOS/ViewControllers/EnterPassViewController.cs" Line="41" Column="49" />
-      <File FileName="CloudCoinIOS/Core/Safe.cs" Line="190" Column="31" />
+      <File FileName="CloudCoinIOS/ViewControllers/EnterPassViewController.cs" Line="58" Column="25" />
+      <File FileName="CloudCoinIOS/Core/Safe.cs" Line="289" Column="30" />
       <File FileName="CloudCoinIOS/Core2.0/Banker.cs" Line="25" Column="38" />
-      <File FileName="CloudCoinIOS/Core/RAIDA.cs" Line="196" Column="67" />
-      <File FileName="CloudCoinIOS/Core/CloudCoin.cs" Line="16" Column="77" />
-      <File FileName="CloudCoinIOS/Core2.0/CloudCoin.cs" Line="320" Column="29" />
-      <File FileName="CloudCoinIOS/Core2.0/Node.cs" Line="472" Column="48" />
-      <File FileName="CloudCoinIOS/Core2.0/RAIDA.cs" Line="153" Column="57" />
+      <File FileName="CloudCoinIOS/Core/RAIDA.cs" Line="138" Column="62" />
+      <File FileName="CloudCoinIOS/Core2.0/Node.cs" Line="29" Column="9" />
+      <File FileName="CloudCoinIOS/Core2.0/RAIDA.cs" Line="93" Column="9" />
+      <File FileName="CloudCoinIOS/Core/RAIDAFix.cs" Line="142" Column="34" />
+      <File FileName="CloudCoinIOS/ViewControllers/ImportViewController.cs" Line="76" Column="97" />
+      <File FileName="CloudCoinIOS/Core/IOModels.cs" Line="73" Column="47" />
+      <File FileName="CloudCoinIOS/Core/CloudCoin.cs" Line="12" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />

@@ -7,6 +7,7 @@ using CloudCoin_SafeScan;
 using Foundation;
 using GalaSoft.MvvmLight.Threading;
 using UIKit;
+using System.Linq;
 
 namespace CloudCoinIOS
 {
@@ -71,8 +72,9 @@ namespace CloudCoinIOS
 					isPasswordForSafe = await ShowAlert("Confirmation", confirmMsg, new string[] { "Yes", "No" });
                     btnCancel.Hidden = true;
                     btnImport.Hidden = true;
-                    //CloudCoinCore.RAIDA.GetInstance().GetMultiDetectTasks(coinFile.Coins);
-                    RAIDA.Instance.Detect(coinFile.Coins, true);
+
+                    RAIDA.Instance.GetMultiDetectTasks(coinFile.Coins.ToArray<CloudCoin>(), 1000);
+                    //RAIDA.Instance.Detect(coinFile.Coins, true);
 
                     if (isPasswordForSafe == 0)
 					{
