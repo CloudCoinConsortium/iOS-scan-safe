@@ -41,11 +41,13 @@ namespace CloudCoin_SafeScan
     {
         public CoinStack stack;
         public Stopwatch sw;
+        public RAIDA raida;
 
-        public StackScanCompletedEventArgs(CoinStack st, Stopwatch stwtch)
+        public StackScanCompletedEventArgs(CoinStack st, Stopwatch stwtch, RAIDA raida)
         {
             stack = st;
             sw = stwtch;
+            this.raida = raida;
         }
     }
     public class CoinFixStartedEventArgs : EventArgs

@@ -135,9 +135,10 @@ namespace CloudCoin_SafeScan
             StackScanCompleted?.Invoke(this, e);
         }
 
-        public List<Func<Task>> GetMultiDetectTasks(CloudCoin[] coins, int milliSecondsToTimeOut, bool changeANs = true)
+        public List<Func<Task>> GetMultiDetectTasks(CoinStack coinStack, int milliSecondsToTimeOut, bool changeANs = true)
         {
-            this.coins = coins;
+            CloudCoin[] coins = coinStack.ToArray<CloudCoin>();
+            //this.coins = cloudCoins;
 
             responseArrayMulti = new Response[Config.NodeCount, coins.Length];
 
@@ -235,7 +236,7 @@ namespace CloudCoin_SafeScan
             }
             Task.Factory.ContinueWhenAll(checkStackTasks, (ancs) =>
             {
-                onStackScanCompleted(new StackScanCompletedEventArgs(stack, total));
+                onStackScanCompleted(new StackScanCompletedEventArgs(stack, total,null));
             });
         }
                 
@@ -315,7 +316,7 @@ namespace CloudCoin_SafeScan
                         postVariables.Add(new KeyValuePair<string, string>("denomination[]", d[i].ToString()));
                         // Debug.WriteLine("url is " + this.fullUrl + "detect?nns[]=" + nn[i] + "&sns[]=" + sn[i] + "&ans[]=" + an[i] + "&pans[]=" + pan[i] + "&denomination[]=" + d[i]);
 
-                        response[i].fullRequest = this.BaseUri.AbsolutePath + "detect?nns[]=" + nn[i] + "&sns[]=" + sn[i] + "&ans[]=" + an[i] + "&pans[]=" + pan[i] + "&denomination[]=" + d[i];//Record what was sent
+                        response[i].fullRequest = this.BaseUri.AbsoluteUri + "detect?nns[]=" + nn[i] + "&sns[]=" + sn[i] + "&ans[]=" + an[i] + "&pans[]=" + pan[i] + "&denomination[]=" + d[i];//Record what was sent
                     }
 
                     //convert postVariables to an object of FormUrlEncodedContent
@@ -339,7 +340,7 @@ namespace CloudCoin_SafeScan
                         using (client)
                         {
                             // Console.Write("postHtml await for response: ");
-                            json = await client.PostAsync(BaseUri.AbsolutePath + "multi_detect", dataContent);
+                            json = await client.PostAsync(BaseUri.AbsoluteUri + "multi_detect", dataContent);
 
                             //Console.Write(".");
                             if (json.IsSuccessStatusCode)//200 status good
@@ -497,11 +498,11 @@ namespace CloudCoin_SafeScan
             public string Name { get; set; }
             public Uri BaseUri
             {
-                get { return new Uri("https://RAIDA" + Number.ToString() + ".cloudcoin.global/service"); }
+                get { return new Uri("https://RAIDA" + Number.ToString() + ".cloudcoin.global/service/"); }
             }
             public Uri BackupUri
             {
-                get { return new Uri("https://RAIDA" + Number.ToString() + ".cloudcoin.ch/service"); }
+                get { return new Uri("https://RAIDA" + Number.ToString() + ".cloudcoin.ch/service/"); }
             }
             public EchoResponse LastEchoStatus;
             public DetectResponse LastDetectResult;

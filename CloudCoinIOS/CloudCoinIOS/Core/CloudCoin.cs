@@ -5,6 +5,7 @@ using System.Linq;
 using System.Collections;
 using Newtonsoft.Json;
 using System.Security.Cryptography;
+using CloudCoinCore;
 
 namespace CloudCoin_SafeScan
 {
@@ -36,6 +37,10 @@ namespace CloudCoin_SafeScan
                 return obj.sn;
             }
         }
+
+        [JsonIgnore]
+        public Response[] response = new Response[Config.NodeCount];
+
 
         [JsonProperty]
         public int nn { set; get; }
