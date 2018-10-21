@@ -1,14 +1,12 @@
 ﻿<Properties StartupConfiguration="{B6987EF8-3EEE-4D5A-A6CF-64CEF3458A74}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CloudCoinIOS/ViewControllers/MainViewController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CloudCoinIOS/Core2.0/Node.cs">
     <Files>
-      <File FileName="CloudCoinIOS/ViewControllers/EnterPassViewController.cs" Line="82" Column="21" />
+      <File FileName="CloudCoinIOS/ViewControllers/EnterPassViewController.cs" Line="81" Column="58" />
       <File FileName="CloudCoinIOS/Core/Safe.cs" Line="285" Column="38" />
-      <File FileName="CloudCoinIOS/Core2.0/Node.cs" Line="449" Column="61" />
-      <File FileName="CloudCoinIOS/ViewControllers/ImportViewController.cs" Line="93" Column="1" />
-      <File FileName="CloudCoinIOS/ViewControllers/AuthorizationViewController.cs" Line="98" Column="1" />
-      <File FileName="CloudCoinIOS/Main.cs" Line="12" Column="1" />
-      <File FileName="CloudCoinIOS/Core/RAIDA.cs" Line="138" Column="33" />
-      <File FileName="CloudCoinIOS/ViewControllers/MainViewController.cs" Line="90" Column="1" />
+      <File FileName="CloudCoinIOS/Core2.0/Node.cs" Line="266" Column="22" />
+      <File FileName="CloudCoinIOS/ViewControllers/ImportViewController.cs" Line="24" Column="9" />
+      <File FileName="CloudCoinIOS/ViewControllers/AuthorizationViewController.cs" Line="80" Column="9" />
+      <File FileName="CloudCoinIOS/ViewCells/AuthHeaderCell.cs" Line="18" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
@@ -17,7 +15,6 @@
       <Breakpoint file="/Volumes/Working/CloudCoin/iOS/CloudCoinIOS/CloudCoinIOS/ViewControllers/ExportViewController.cs" relfile="CloudCoinIOS/ViewControllers/ExportViewController.cs" line="116" column="39" />
       <Breakpoint file="/Volumes/Working/CloudCoin/iOS/CloudCoinIOS/CloudCoinIOS/ViewControllers/AuthorizationViewController.cs" relfile="CloudCoinIOS/ViewControllers/AuthorizationViewController.cs" line="98" column="1" />
       <Breakpoint file="/Volumes/Working/CloudCoin/iOS/CloudCoinIOS/CloudCoinIOS/ViewControllers/MainViewController.cs" relfile="CloudCoinIOS/ViewControllers/MainViewController.cs" line="90" column="1" />
-      <Breakpoint file="/Volumes/Working/CloudCoin/iOS/CloudCoinIOS/CloudCoinIOS/ViewControllers/MainViewController.cs" relfile="CloudCoinIOS/ViewControllers/MainViewController.cs" line="108" column="1" />
       <Breakpoint file="/Volumes/Working/CloudCoin/iOS/CloudCoinIOS/CloudCoinIOS/Core/RAIDA.cs" relfile="CloudCoinIOS/Core/RAIDA.cs" line="239" column="1" />
       <Breakpoint file="/Volumes/Working/CloudCoin/iOS/CloudCoinIOS/CloudCoinIOS/ViewControllers/MainViewController.cs" relfile="CloudCoinIOS/ViewControllers/MainViewController.cs" line="72" column="1" />
       <Breakpoint file="/Volumes/Working/CloudCoin/iOS/CloudCoinIOS/CloudCoinIOS/ViewControllers/AuthorizationViewController.cs" relfile="CloudCoinIOS/ViewControllers/AuthorizationViewController.cs" line="85" column="1" />
