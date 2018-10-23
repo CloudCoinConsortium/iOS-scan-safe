@@ -4,6 +4,7 @@ using System;
 using System.IO;
 using System.Text;
 using CloudCoin_SafeScan;
+using CoreNFC;
 using CryptSharp;
 using Foundation;
 using PassKit;
@@ -11,7 +12,7 @@ using UIKit;
 
 namespace CloudCoinIOS
 {
-	public partial class MainViewController : UIViewController
+	public partial class MainViewController : UIViewController, INFCNdefReaderSessionDelegate
 	{
 		public enum ViewType
 		{
@@ -24,6 +25,8 @@ namespace CloudCoinIOS
 		private CloudCoinFile coinFile;
 		private AppDelegate appDelegate;
         private bool owner;
+
+        private NFCNdefReaderSession Session;
 
 		public MainViewController (IntPtr handle) : base (handle)
 		{
@@ -66,6 +69,11 @@ namespace CloudCoinIOS
                 authViewController.CompletedWithPassword += CompletedWithPassword;
             };
 		}
+
+        partial void OnScanNFCTouched(Foundation.NSObject sender){
+            Session = new NFCNdefReaderSession(this, null, true);
+            Session?.BeginSession();
+        }
 
         private void FinishImporting(object sender, CloudCoinFile ccFile)
         {
@@ -200,5 +208,17 @@ namespace CloudCoinIOS
 		{
 			return UIStatusBarStyle.LightContent;
 		}
-	}
+
+        public void DidInvalidate(NFCNdefReaderSession session, NSError error)
+        {
+            Console.WriteLine(error.Description);
+        }
+
+        public void DidDetect(NFCNdefReaderSession session, NFCNdefMessage[] messages)
+        {
+            foreach (var msg in messages) {
+                Console.WriteLine(msg);
+            }
+        }
+    }
 }

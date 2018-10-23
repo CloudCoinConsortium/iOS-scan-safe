@@ -1,26 +1,17 @@
 ﻿<Properties StartupConfiguration="{B6987EF8-3EEE-4D5A-A6CF-64CEF3458A74}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CloudCoinIOS/Core2.0/Node.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CloudCoinIOS/Info.plist">
     <Files>
-      <File FileName="CloudCoinIOS/ViewControllers/EnterPassViewController.cs" Line="81" Column="58" />
-      <File FileName="CloudCoinIOS/Core/Safe.cs" Line="285" Column="38" />
-      <File FileName="CloudCoinIOS/Core2.0/Node.cs" Line="266" Column="22" />
-      <File FileName="CloudCoinIOS/ViewControllers/ImportViewController.cs" Line="24" Column="9" />
-      <File FileName="CloudCoinIOS/ViewControllers/AuthorizationViewController.cs" Line="80" Column="9" />
-      <File FileName="CloudCoinIOS/ViewCells/AuthHeaderCell.cs" Line="18" Column="13" />
+      <File FileName="CloudCoinIOS/ViewControllers/MainViewController.cs" Line="15" Column="61" />
+      <File FileName="CloudCoinIOS/ViewControllers/ImportViewController.cs" Line="1" Column="1" />
+      <File FileName="CloudCoinIOS/ViewControllers/MainViewController.designer.cs" Line="1" Column="1" />
+      <File FileName="CloudCoinIOS/ViewControllers/FixFrackedViewController.cs" Line="85" Column="56" />
+      <File FileName="CloudCoinIOS/Entitlements.plist" />
+      <File FileName="CloudCoinIOS/Info.plist" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Volumes/Working/CloudCoin/iOS/CloudCoinIOS/CloudCoinIOS/ViewControllers/ExportViewController.cs" relfile="CloudCoinIOS/ViewControllers/ExportViewController.cs" line="116" column="39" />
-      <Breakpoint file="/Volumes/Working/CloudCoin/iOS/CloudCoinIOS/CloudCoinIOS/ViewControllers/AuthorizationViewController.cs" relfile="CloudCoinIOS/ViewControllers/AuthorizationViewController.cs" line="98" column="1" />
-      <Breakpoint file="/Volumes/Working/CloudCoin/iOS/CloudCoinIOS/CloudCoinIOS/ViewControllers/MainViewController.cs" relfile="CloudCoinIOS/ViewControllers/MainViewController.cs" line="90" column="1" />
-      <Breakpoint file="/Volumes/Working/CloudCoin/iOS/CloudCoinIOS/CloudCoinIOS/Core/RAIDA.cs" relfile="CloudCoinIOS/Core/RAIDA.cs" line="239" column="1" />
-      <Breakpoint file="/Volumes/Working/CloudCoin/iOS/CloudCoinIOS/CloudCoinIOS/ViewControllers/MainViewController.cs" relfile="CloudCoinIOS/ViewControllers/MainViewController.cs" line="72" column="1" />
-      <Breakpoint file="/Volumes/Working/CloudCoin/iOS/CloudCoinIOS/CloudCoinIOS/ViewControllers/AuthorizationViewController.cs" relfile="CloudCoinIOS/ViewControllers/AuthorizationViewController.cs" line="85" column="1" />
-      <Breakpoint file="/Volumes/Working/CloudCoin/iOS/CloudCoinIOS/CloudCoinIOS/ViewControllers/AuthorizationViewController.cs" relfile="CloudCoinIOS/ViewControllers/AuthorizationViewController.cs" line="82" column="1" />
-      <Breakpoint file="/Volumes/Working/CloudCoin/iOS/CloudCoinIOS/CloudCoinIOS/ViewControllers/ImportViewController.cs" relfile="CloudCoinIOS/ViewControllers/ImportViewController.cs" line="93" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.CloudCoinIOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.eeef4730b8f9ecdf95c8994c3904326b713973d1" automaticSigning="False" />

@@ -9,57 +9,60 @@ using System.CodeDom.Compiler;
 
 namespace CloudCoinIOS
 {
-    [Register ("MainViewController")]
-    partial class MainViewController
-    {
-        [Outlet]
-        UIKit.UIView bankView { get; set; }
+	[Register ("MainViewController")]
+	partial class MainViewController
+	{
+		[Outlet]
+		UIKit.UIView bankView { get; set; }
 
-        [Outlet]
-        UIKit.UIView exportView { get; set; }
+		[Outlet]
+		UIKit.UIView exportView { get; set; }
 
-        [Outlet]
-        UIKit.UIView importView { get; set; }
+		[Outlet]
+		UIKit.UIView importView { get; set; }
 
-        [Outlet]
-        UIKit.UIView mainView { get; set; }
+		[Outlet]
+		UIKit.UIView mainView { get; set; }
 
-        [Action ("OnBankTouched:")]
-        partial void OnBankTouched (Foundation.NSObject sender);
+		[Action ("OnBankTouched:")]
+		partial void OnBankTouched (Foundation.NSObject sender);
 
-        [Action ("OnExportTouched:")]
-        partial void OnExportTouched (Foundation.NSObject sender);
+		[Action ("OnExportTouched:")]
+		partial void OnExportTouched (Foundation.NSObject sender);
 
-        [Action ("OnHelpTouched:")]
-        partial void OnHelpTouched (Foundation.NSObject sender);
+		[Action ("OnHelpTouched:")]
+		partial void OnHelpTouched (Foundation.NSObject sender);
 
-        [Action ("OnImportTouched:")]
-        partial void OnImportTouched (Foundation.NSObject sender);
+		[Action ("OnImportTouched:")]
+		partial void OnImportTouched (Foundation.NSObject sender);
 
-        [Action ("OnSettingTouched:")]
-        partial void OnSettingTouched (Foundation.NSObject sender);
-        
-        void ReleaseDesignerOutlets ()
-        {
-            if (bankView != null) {
-                bankView.Dispose ();
-                bankView = null;
-            }
+		[Action ("OnScanNFCTouched:")]
+		partial void OnScanNFCTouched (Foundation.NSObject sender);
 
-            if (exportView != null) {
-                exportView.Dispose ();
-                exportView = null;
-            }
+		[Action ("OnSettingTouched:")]
+		partial void OnSettingTouched (Foundation.NSObject sender);
+		
+		void ReleaseDesignerOutlets ()
+		{
+			if (bankView != null) {
+				bankView.Dispose ();
+				bankView = null;
+			}
 
-            if (importView != null) {
-                importView.Dispose ();
-                importView = null;
-            }
+			if (exportView != null) {
+				exportView.Dispose ();
+				exportView = null;
+			}
 
-            if (mainView != null) {
-                mainView.Dispose ();
-                mainView = null;
-            }
-        }
-    }
+			if (importView != null) {
+				importView.Dispose ();
+				importView = null;
+			}
+
+			if (mainView != null) {
+				mainView.Dispose ();
+				mainView = null;
+			}
+		}
+	}
 }

@@ -279,6 +279,7 @@
     <BundleResource Include="Resources\CloudCoinLogoRound96.png" />
     <BundleResource Include="Resources\CloudCoinLogoRound80.png" />
     <BundleResource Include="Resources\safebtn.png" />
+    <BundleResource Include="Resources\nfc_detect.png" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork" />

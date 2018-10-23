@@ -147,5 +147,7 @@
 	<true/>
 	<key>UIFileSharingEnabled</key>
 	<true/>
+	<key>NFCReaderUsageDescription</key>
+	<string>NFC tag to read NDEF messages into the application</string>
 </dict>
 </plist>
