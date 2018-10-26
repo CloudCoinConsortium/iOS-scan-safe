@@ -7,6 +7,8 @@ using CloudCoin_SafeScan;
 using CoreNFC;
 using CryptSharp;
 using Foundation;
+using CoreFoundation;
+using System.Collections.Generic;
 using PassKit;
 using UIKit;
 
