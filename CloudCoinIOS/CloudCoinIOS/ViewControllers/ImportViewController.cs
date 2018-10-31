@@ -75,22 +75,25 @@ namespace CloudCoinIOS
 
                     if (isPasswordForSafe == 0)
                     {
-                        //RAIDA.Instance.Detect(coinFile.Coins, true);
+                    
+                        RAIDA.Instance.Detect(coinFile.Coins, true);
 
                         DetectHandler.Invoke(this, true);
                         //will implement the Safe source.
                     }
                     else
                     {
-                        //RAIDA.Instance.Detect(coinFile.Coins, false);
+                    
+                        RAIDA.Instance.Detect(coinFile.Coins, false);
+
                         DetectHandler.Invoke(this, false);
                     }
 
-                    var raida = RAIDA.Instance;
-                    var tasks = raida.GetMultiDetectTasks(coinFile.Coins, 1000);
+                    //var raida = RAIDA.Instance;
+                    //var tasks = raida.GetMultiDetectTasks(coinFile.Coins, 1000);
 
-                    await Task.WhenAll(tasks.AsParallel().Select(async task => await task()));
-                    raida.onStackScanCompleted(new StackScanCompletedEventArgs(coinFile.Coins, null, raida));
+                    //await Task.WhenAll(tasks.AsParallel().Select(async task => await task()));
+                    //raida.onStackScanCompleted(new StackScanCompletedEventArgs(coinFile.Coins, null, raida));
 
                     ImportFilesHandler.Invoke(this, coinFile);
                     RemoveAnimate();

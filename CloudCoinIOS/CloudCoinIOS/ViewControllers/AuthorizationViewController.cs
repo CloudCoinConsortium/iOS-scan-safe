@@ -69,31 +69,31 @@ namespace CloudCoinIOS
         {
             InvokeOnMainThread(() =>
             {
-                int j = 0;
-                foreach (var coin in e.stack) {
-                    for (int k = 0; k < CloudCoinCore.Config.NodeCount; k++) {
-                        if (e.raida.NodesArray[k].MultiResponse.responses!=null) {
-                            coin.response[k] = e.raida.NodesArray[k].MultiResponse.responses[j];
-                        } else {
-                            coin.response[k] = new CloudCoinCore.Response();
-                        }
-                    }
+                //int j = 0;
+                //foreach (var coin in e.stack) {
+                //    for (int k = 0; k < CloudCoinCore.Config.NodeCount; k++) {
+                //        if (e.raida.NodesArray[k].MultiResponse.responses!=null) {
+                //            coin.response[k] = e.raida.NodesArray[k].MultiResponse.responses[j];
+                //        } else {
+                //            coin.response[k] = new CloudCoinCore.Response();
+                //        }
+                //    }
 
-                    int countp = coin.response.Where(x => x.outcome == "pass").Count();
-                    int countf = coin.response.Where(x => x.outcome == "fail").Count();
+                //    int countp = coin.response.Where(x => x.outcome == "pass").Count();
+                //    int countf = coin.response.Where(x => x.outcome == "fail").Count();
 
-                    checkingCoinList.Add(new Coin4Display()
-                    {
-                        Serial = coin.sn,
-                        Value = Utils.Denomination2Int(coin.denomination),
-                        Check = countp > RAIDA.MINTRUSTEDNODES4AUTH ? true : false,
-                        Comment = (countp * 100 / RAIDA.NODEQNTY) + "%"
-                    });
+                //    checkingCoinList.Add(new Coin4Display()
+                //    {
+                //        Serial = coin.sn,
+                //        Value = Utils.Denomination2Int(coin.denomination),
+                //        Check = countp > RAIDA.MINTRUSTEDNODES4AUTH ? true : false,
+                //        Comment = (countp * 100 / RAIDA.NODEQNTY) + "%"
+                //    });
 
-                    j++;
+                //    j++;
 
-                }
-                authTableView.ReloadData();
+                //}
+                //authTableView.ReloadData();
 
                 var status = "Checking Result:\n";
                 status += e.stack.cloudcoin.Count.ToString() + " coins scanned.\n";
