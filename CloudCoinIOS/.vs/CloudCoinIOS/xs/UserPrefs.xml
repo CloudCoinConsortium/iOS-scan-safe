@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{B6987EF8-3EEE-4D5A-A6CF-64CEF3458A74}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="CloudCoinIOS/ViewControllers/ExportViewController.cs">
     <Files>
-      <File FileName="CloudCoinIOS/ViewControllers/MainViewController.cs" Line="136" Column="9" />
+      <File FileName="CloudCoinIOS/ViewControllers/MainViewController.cs" Line="80" Column="23" />
       <File FileName="CloudCoinIOS/ViewControllers/ImportViewController.cs" Line="23" Column="62" />
       <File FileName="CloudCoinIOS/ViewControllers/FixFrackedViewController.cs" Line="115" Column="2" />
       <File FileName="CloudCoinIOS/ViewControllers/HelpViewController.cs" Line="20" Column="55" />
-      <File FileName="CloudCoinIOS/AppDelegate.cs" Line="154" Column="55" />
+      <File FileName="CloudCoinIOS/AppDelegate.cs" Line="118" Column="4" />
       <File FileName="CloudCoinIOS/ViewControllers/ImportViewController.designer.cs" Line="1" Column="1" />
       <File FileName="CloudCoinIOS/Core/Logger.cs" Line="69" Column="27" />
       <File FileName="CloudCoinIOS/Core/RAIDA.cs" Line="240" Column="17" />
@@ -13,17 +13,18 @@
       <File FileName="CloudCoinIOS/ViewControllers/BankViewController.designer.cs" Line="1" Column="1" />
       <File FileName="CloudCoinIOS/ViewControllers/BankViewController.cs" Line="63" Column="39" />
       <File FileName="CloudCoinIOS/Core/ApplicationLogic.cs" Line="117" Column="33" />
-      <File FileName="CloudCoinIOS/Core/RAIDAFix.cs" Line="60" Column="54" />
+      <File FileName="CloudCoinIOS/Core/RAIDAFix.cs" Line="86" Column="30" />
       <File FileName="CloudCoinIOS/Core/CloudCoin.cs" Line="13" Column="18" />
       <File FileName="CloudCoinIOS/ViewControllers/ExportViewController.designer.cs" Line="1" Column="1" />
-      <File FileName="CloudCoinIOS/ViewControllers/ExportViewController.cs" Line="117" Column="22" />
+      <File FileName="CloudCoinIOS/ViewControllers/ExportViewController.cs" Line="156" Column="14" />
+      <File FileName="CloudCoinIOS/ViewControllers/BaseFormSheet.cs" Line="77" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.CloudCoinIOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.012413FA-8483-49BD-BAE6-597FFA2122C5" automaticSigning="False" />
+  <MonoDevelop.Ide.ItemProperties.CloudCoinIOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.eeef4730b8f9ecdf95c8994c3904326b713973d1" automaticSigning="False" />
   <MultiItemStartupConfigurations />
 </Properties>

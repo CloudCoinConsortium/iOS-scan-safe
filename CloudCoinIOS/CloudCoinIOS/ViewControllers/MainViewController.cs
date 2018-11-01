@@ -73,8 +73,21 @@ namespace CloudCoinIOS
 		}
 
         partial void OnScanNFCTouched(Foundation.NSObject sender){
-            Session = new NFCNdefReaderSession(this, null, true);
-            Session?.BeginSession();
+            if (UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Phone) {
+                if (UIScreen.MainScreen.NativeBounds.Height == 1136 ||
+                    UIScreen.MainScreen.NativeBounds.Height == 1334) {
+                    Logger.Write("Can only support to detect NFC tag over iPhone7 Device", Logger.Level.Normal);
+
+                    var okAlertController = UIAlertController.Create("Detection", "Can only support to detect NFC tag over iPhone7 Device",
+                                                                     UIAlertControllerStyle.Alert);
+                    okAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
+                    PresentViewController(okAlertController, true, null);
+                    return;
+                }
+
+                Session = new NFCNdefReaderSession(this, null, true);
+                Session?.BeginSession();
+            }
         }
 
         private void FinishImporting(object sender, CloudCoinFile ccFile)
