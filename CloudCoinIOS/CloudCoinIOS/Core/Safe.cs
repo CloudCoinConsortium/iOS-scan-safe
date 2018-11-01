@@ -58,8 +58,10 @@ namespace CloudCoin_SafeScan
                 }
             }
 
-			userEnteredPassword = UserInteract.Password; //get user password for Safe
-											//get user password and check against stored in file
+            //userEnteredPassword = UserInteract.Password; //get user password for Safe
+            //get user password and check against stored in file
+
+            userEnteredPassword = "";
 
             if (!fileInfo.Exists)
             { //Safe does not exist, create one

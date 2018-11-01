@@ -21,7 +21,7 @@ namespace CloudCoinIOS
 		public string LogDir { get; set; }
 		public string TemplatesDir { get; set; }
 		public string InboxDir { get; set; }
-		public string Password { get; set; }
+		//public string Password { get; set; }
 
         private NSUserDefaults userDefaults;
 
@@ -66,7 +66,7 @@ namespace CloudCoinIOS
 				}
 			}
 
-			Password = "";
+			//Password = "";
             userDefaults = NSUserDefaults.StandardUserDefaults;
 
             Logger.Initialize();

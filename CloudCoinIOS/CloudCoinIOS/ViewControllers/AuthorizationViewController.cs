@@ -12,7 +12,7 @@ namespace CloudCoinIOS
     public partial class AuthorizationViewController : BaseFormSheet
     {
 		public delegate void SetPasswordEventHandler();
-		public event SetPasswordEventHandler CompletedWithPassword;
+		//public event SetPasswordEventHandler CompletedWithPassword;
         private List<Coin4Display> checkingCoinList;
 
         public AuthorizationViewController (IntPtr handle) : base (handle)
@@ -47,7 +47,7 @@ namespace CloudCoinIOS
         {
             btnCancel.TouchUpInside += (sender, e) => {
 				RemoveAnimate();
-				CompletedWithPassword();                
+				//CompletedWithPassword();                
             };
         }
 
