@@ -4,23 +4,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UIKit;
+using CloudCoinIOS;
 
 namespace CloudCoin_SafeScan
 {
     public static class Logger
     {
         public enum Level { Warning, Normal, Error, Debug }
-        private static string logdir = Environment.ExpandEnvironmentVariables(Properties.Settings.Default.UserCloudcoinLogDir);
-        private static FileInfo LogFile = new FileInfo(logdir + "cloudcoin.log");
+        private static string logdir;
+        private static FileInfo LogFile;
 
         public static void Initialize()
         {
-            
             var DI = new DirectoryInfo(logdir);
             if (!DI.Exists)
             {
                 DI.Create();
             }
+
 
             if (!LogFile.Exists)
             {
@@ -32,6 +34,9 @@ namespace CloudCoin_SafeScan
 
         static Logger()
         {
+            var appDelegate = (AppDelegate)UIApplication.SharedApplication.Delegate;
+            logdir = Environment.ExpandEnvironmentVariables(appDelegate.LogDir);
+            LogFile = new FileInfo(logdir + "/" + "cloudcoin.log");
             tw = TextWriter.Synchronized(File.AppendText(LogFile.FullName));
         }
 

@@ -80,6 +80,7 @@ namespace CloudCoinIOS
         private void FinishImporting(object sender, CloudCoinFile ccFile)
         {
             this.coinFile = ccFile;
+            Logger.Write(string.Format("Finish Importing (coins count = {0})", ccFile.Coins.cloudcoin.Count), Logger.Level.Debug);
         }
 
 		private void CompletedWithPassword()

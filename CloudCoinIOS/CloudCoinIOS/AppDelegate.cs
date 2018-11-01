@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using CloudCoin_SafeScan;
 using Foundation;
 using UIKit;
 
@@ -67,6 +68,10 @@ namespace CloudCoinIOS
 
 			Password = "";
             userDefaults = NSUserDefaults.StandardUserDefaults;
+
+            Logger.Initialize();
+
+            Logger.Write("Initialize the Application", Logger.Level.Debug);
 
 			return true;
 		}

@@ -237,6 +237,7 @@ namespace CloudCoin_SafeScan
             Task.Factory.ContinueWhenAll(checkStackTasks, (ancs) =>
             {
                 onStackScanCompleted(new StackScanCompletedEventArgs(stack, total,null));
+                Logger.Write(string.Format("Import {0} Coins", total), Logger.Level.Normal);
             });
         }
                 
