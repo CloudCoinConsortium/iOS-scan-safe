@@ -138,6 +138,8 @@ namespace CloudCoinIOS
 						}
                     }
 
+                    Logger.Write("Export coins", Logger.Level.Normal);
+
                     var activityViewController = new UIActivityViewController(fileDataList.ToArray(), null);
 
 					if (UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Pad)
@@ -152,7 +154,8 @@ namespace CloudCoinIOS
 				else
 				{
 					await ShowAlert("Export", "Nothing to export!\n", new string[] {"Ok"});
-				}
+                    Logger.Write("Nothing to export!", Logger.Level.Normal);
+                }
 			};
 		}
 

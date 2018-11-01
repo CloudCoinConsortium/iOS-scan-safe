@@ -71,7 +71,7 @@ namespace CloudCoinIOS
 
             Logger.Initialize();
 
-            Logger.Write("Initialize the Application", Logger.Level.Debug);
+            Logger.Write("Initialize the Application", Logger.Level.Normal);
 
 			return true;
 		}
