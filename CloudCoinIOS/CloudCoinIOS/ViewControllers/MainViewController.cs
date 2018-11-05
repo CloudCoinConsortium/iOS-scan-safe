@@ -68,7 +68,7 @@ namespace CloudCoinIOS
                 this.owner = (bool)owner;
                 var authViewController = (AuthorizationViewController)GetViewController("AuthorizationViewController");
 				authViewController.ShowInView(View, true);
-                //authViewController.CompletedWithPassword += CompletedWithPassword;
+                authViewController.CompleteAuth += CompleteAuth;
             };
 		}
 
@@ -96,62 +96,62 @@ namespace CloudCoinIOS
             Logger.Write(string.Format("Finish Importing (coins count = {0})", ccFile.Coins.cloudcoin.Count), Logger.Level.Normal);
         }
 
-		private void CompletedWithPassword()
+		private void CompleteAuth()
 		{
             if (owner && coinFile != null)
             {
 				subViewType = ViewType.Imported;
-				ShowPasswordViewController();
+                FinishProcess();
             }
 		}
 
-		private void ShowPasswordViewController()
-		{
-			//var fileInfo = new FileInfo(Safe.GetSafeFilePath());
-			//NewPassViewController newPassViewController;
-			//EnterPassViewController enterPassViewController;
-
-			//if (!fileInfo.Exists)
-			//{
-			//	newPassViewController = (NewPassViewController)GetViewController("NewPassViewController");
-			//	newPassViewController.ShowInView(View, true);
-			//	newPassViewController.FinishSetPassword += FinishDoPassword;
-			//}
-			//else
-			//{
-			//	enterPassViewController = (EnterPassViewController)GetViewController("EnterPassViewController");
-			//	enterPassViewController.ShowInView(View, true);
-			//	enterPassViewController.FinishEnterPassword += FinishDoPassword;
-			//}
-		}
-
-		//private void FinishDoPassword(string password)
+		//private void ShowPasswordViewController()
 		//{
-		//	UserInteract.Password = password;
-		//	appDelegate.Password = password;
-		//	if (subViewType == ViewType.Imported)
-		//	{
-		//		Safe.Instance?.Add(coinFile.Coins);
-		//		foreach (var path in appDelegate.UrlList)
-		//		{
-		//			File.Delete(path);
-		//		}
+		//	//var fileInfo = new FileInfo(Safe.GetSafeFilePath());
+		//	//NewPassViewController newPassViewController;
+		//	//EnterPassViewController enterPassViewController;
 
-		//		appDelegate.UrlList.Clear();
-		//	}
-
-		//	if (Safe.Instance != null)
-		//	{
-		//		if (subViewType == ViewType.Exported)
-		//		{
-		//			ShowExportViewController();
-		//		}
-		//		else
-		//		{
-		//			ShowBankViewController();
-		//		}
-		//	}
+		//	//if (!fileInfo.Exists)
+		//	//{
+		//	//	newPassViewController = (NewPassViewController)GetViewController("NewPassViewController");
+		//	//	newPassViewController.ShowInView(View, true);
+		//	//	newPassViewController.FinishSetPassword += FinishDoPassword;
+		//	//}
+		//	//else
+		//	//{
+		//	//	enterPassViewController = (EnterPassViewController)GetViewController("EnterPassViewController");
+		//	//	enterPassViewController.ShowInView(View, true);
+		//	//	enterPassViewController.FinishEnterPassword += FinishDoPassword;
+		//	//}
 		//}
+
+		private void FinishProcess()
+		{
+			//UserInteract.Password = password;
+			//appDelegate.Password = password;
+			if (subViewType == ViewType.Imported)
+			{
+				Safe.Instance?.Add(coinFile.Coins);
+				foreach (var path in appDelegate.UrlList)
+				{
+					File.Delete(path);
+				}
+
+				appDelegate.UrlList.Clear();
+			}
+
+			if (Safe.Instance != null)
+			{
+				if (subViewType == ViewType.Exported)
+				{
+					ShowExportViewController();
+				}
+				else
+				{
+					ShowBankViewController();
+				}
+			}
+		}
 
 		private void ShowExportViewController()
 		{
@@ -177,30 +177,12 @@ namespace CloudCoinIOS
 
 		partial void OnExportTouched(Foundation.NSObject sender)
 		{
-			subViewType = ViewType.Exported;
-
-			//if (appDelegate.Password == "")
-			//{
-			//	ShowPasswordViewController();
-			//}
-			//else
-			//{
-				ShowExportViewController();
-			//}
+			ShowExportViewController();
 		}
 
 		partial void OnBankTouched(Foundation.NSObject sender)
 		{
-			//subViewType = ViewType.Banked;
-
-			//if (appDelegate.Password == "")
-			//{
-			//	ShowPasswordViewController();
-			//}
-			//else
-			//{
-				ShowBankViewController();
-			//}
+			ShowBankViewController();
 		}
 
         partial void OnSettingTouched(Foundation.NSObject sender)

@@ -1,17 +1,20 @@
 ﻿<Properties StartupConfiguration="{B6987EF8-3EEE-4D5A-A6CF-64CEF3458A74}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CloudCoinIOS/Core/Safe.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CloudCoinIOS/ViewControllers/BaseFormSheet.cs">
     <Files>
-      <File FileName="CloudCoinIOS/ViewControllers/AuthorizationViewController.cs" Line="15" Column="51" />
-      <File FileName="CloudCoinIOS/ViewControllers/EnterPassViewController.cs" Line="14" Column="49" />
-      <File FileName="CloudCoinIOS/ViewControllers/MainViewController.cs" Line="110" Column="6" />
-      <File FileName="CloudCoinIOS/AppDelegate.cs" Line="69" Column="13" />
-      <File FileName="CloudCoinIOS/Core/Safe.cs" Line="62" Column="12" />
+      <File FileName="CloudCoinIOS/ViewControllers/AuthorizationViewController.cs" Line="49" Column="18" />
+      <File FileName="CloudCoinIOS/ViewControllers/EnterPassViewController.cs" Line="88" Column="22" />
+      <File FileName="CloudCoinIOS/ViewControllers/MainViewController.cs" Line="70" Column="34" />
+      <File FileName="CloudCoinIOS/AppDelegate.cs" Line="9" Column="2" />
+      <File FileName="CloudCoinIOS/Core/Safe.cs" Line="55" Column="47" />
+      <File FileName="CloudCoinIOS/ViewControllers/ImportViewController.cs" Line="98" Column="61" />
+      <File FileName="CloudCoinIOS/ViewControllers/BaseFormSheet.cs" Line="46" Column="15" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Volumes/Working/Xamarin/CloudCoin/iOS/CloudCoinIOS/CloudCoinIOS/ViewControllers/MainViewController.cs" relfile="CloudCoinIOS/ViewControllers/MainViewController.cs" line="79" column="1" />
+      <Breakpoint file="/Volumes/Working/Xamarin/CloudCoin/iOS/CloudCoinIOS/CloudCoinIOS/ViewControllers/MainViewController.cs" relfile="CloudCoinIOS/ViewControllers/MainViewController.cs" line="95" column="1" />
+      <Breakpoint file="/Volumes/Working/Xamarin/CloudCoin/iOS/CloudCoinIOS/CloudCoinIOS/ViewControllers/ImportViewController.cs" relfile="CloudCoinIOS/ViewControllers/ImportViewController.cs" line="98" column="61" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
