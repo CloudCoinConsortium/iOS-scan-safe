@@ -142,6 +142,7 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\CloudCoinLogoRound167.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\CloudCoinLogoRound58ipad.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\CloudCoinLogoRound29ipad.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\CloudCoinLogoRound1024.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
