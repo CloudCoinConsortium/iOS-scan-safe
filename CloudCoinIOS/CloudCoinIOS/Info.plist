@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleName</key>
-	<string>Scan and Safe CloudCoins</string>
+	<string>CloudCoin Scan and Safe</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.cloudcoin.scansafe.ios</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1</string>
+	<string>2.1</string>
 	<key>CFBundleVersion</key>
-	<string>1.5</string>
+	<string>1.6</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MinimumOSVersion</key>
@@ -149,5 +149,9 @@
 	<true/>
 	<key>NFCReaderUsageDescription</key>
 	<string>NFC tag to read NDEF messages into the application</string>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<true/>
 </dict>
 </plist>

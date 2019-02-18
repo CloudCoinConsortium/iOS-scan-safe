@@ -1,17 +1,18 @@
 ﻿<Properties StartupConfiguration="{B6987EF8-3EEE-4D5A-A6CF-64CEF3458A74}|Default">
-  <MonoDevelop.Ide.ItemProperties.CloudCoinIOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.CloudCoinIOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5AE16B7B-DA73-47B2-8010-5F575F5EA5E9" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CloudCoinIOS/ViewControllers/BankViewController.cs">
     <Files>
-      <File FileName="CloudCoinIOS/ViewControllers/AuthorizationViewController.cs" Line="169" Column="1" />
-      <File FileName="CloudCoinIOS/ViewControllers/BankViewController.cs" Line="35" Column="70" />
-      <File FileName="CloudCoinIOS/ViewControllers/EnterPassViewController.cs" Line="24" Column="10" />
-      <File FileName="CloudCoinIOS/ViewControllers/BaseFormSheet.cs" Line="97" Column="1" />
-      <File FileName="CloudCoinIOS/ViewControllers/ExportViewController.cs" Line="135" Column="47" />
-      <File FileName="CloudCoinIOS/Info.plist" />
+      <File FileName="CloudCoinIOS/ViewControllers/AuthorizationViewController.cs" Line="17" Column="24" />
+      <File FileName="CloudCoinIOS/ViewControllers/BankViewController.cs" Line="59" Column="55" />
+      <File FileName="CloudCoinIOS/ViewControllers/EnterPassViewController.designer.cs" Line="1" Column="1" />
+      <File FileName="CloudCoinIOS/ViewControllers/AuthorizationViewController.designer.cs" Line="23" Column="3" />
+      <File FileName="CloudCoinIOS/ViewControllers/ExportViewController.designer.cs" Line="1" Column="1" />
+      <File FileName="CloudCoinIOS/ViewControllers/ExportViewController.cs" Line="43" Column="5" />
+      <File FileName="CloudCoinIOS/ViewControllers/MainViewController.designer.cs" Line="44" Column="38" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

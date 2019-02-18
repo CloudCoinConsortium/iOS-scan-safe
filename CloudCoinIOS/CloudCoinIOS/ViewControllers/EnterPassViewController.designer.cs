@@ -1,42 +1,45 @@
 // WARNING
 //
-// This file has been generated automatically by Visual Studio to store outlets and
-// actions made in the UI designer. If it is removed, they will be lost.
-// Manual changes to this file may not be handled correctly.
+// This file has been generated automatically by Visual Studio from the outlets and
+// actions declared in your storyboard file.
+// Manual changes to this file will not be maintained.
 //
 using Foundation;
+using System;
 using System.CodeDom.Compiler;
 
 namespace CloudCoinIOS
 {
-	[Register ("EnterPassViewController")]
-	partial class EnterPassViewController
-	{
-		[Outlet]
-		UIKit.UIButton btnCancel { get; set; }
+    [Register ("EnterPassViewController")]
+    partial class EnterPassViewController
+    {
+        [Outlet]
+        UIKit.UIButton btnCancel { get; set; }
 
-		[Outlet]
-		UIKit.UIButton btnOk { get; set; }
 
-		[Outlet]
-		UIKit.UITextField txtPassword { get; set; }
-		
-		void ReleaseDesignerOutlets ()
-		{
-			if (btnOk != null) {
-				btnOk.Dispose ();
-				btnOk = null;
-			}
+        [Outlet]
+        UIKit.UIButton btnOk { get; set; }
 
-			if (txtPassword != null) {
-				txtPassword.Dispose ();
-				txtPassword = null;
-			}
 
-			if (btnCancel != null) {
-				btnCancel.Dispose ();
-				btnCancel = null;
-			}
-		}
-	}
+        [Outlet]
+        UIKit.UITextField txtPassword { get; set; }
+
+        void ReleaseDesignerOutlets ()
+        {
+            if (btnCancel != null) {
+                btnCancel.Dispose ();
+                btnCancel = null;
+            }
+
+            if (btnOk != null) {
+                btnOk.Dispose ();
+                btnOk = null;
+            }
+
+            if (txtPassword != null) {
+                txtPassword.Dispose ();
+                txtPassword = null;
+            }
+        }
+    }
 }

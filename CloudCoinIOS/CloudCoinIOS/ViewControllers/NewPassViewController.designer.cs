@@ -48,19 +48,9 @@ namespace CloudCoinIOS
                 btnOk = null;
             }
 
-            if (textConstraintHeight != null) {
-                textConstraintHeight.Dispose ();
-                textConstraintHeight = null;
-            }
-
             if (txtCfrPassword != null) {
                 txtCfrPassword.Dispose ();
                 txtCfrPassword = null;
-            }
-
-            if (txtExplain != null) {
-                txtExplain.Dispose ();
-                txtExplain = null;
             }
 
             if (txtPassword != null) {

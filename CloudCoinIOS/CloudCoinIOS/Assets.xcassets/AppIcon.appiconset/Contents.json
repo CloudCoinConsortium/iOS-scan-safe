@@ -1,11 +1,13 @@
 {
   "images": [
     {
+      "filename": "CloudCoinLogoRound40.png",
       "size": "20x20",
       "scale": "2x",
       "idiom": "iphone"
     },
     {
+      "filename": "CloudCoinLogoRound60.png",
       "size": "20x20",
       "scale": "3x",
       "idiom": "iphone"

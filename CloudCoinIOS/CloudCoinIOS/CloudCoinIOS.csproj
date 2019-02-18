@@ -46,7 +46,7 @@
     <BuildIpa>true</BuildIpa>
     <IpaIncludeArtwork>true</IpaIncludeArtwork>
     <IpaPackageName>ScanSafe_IOS</IpaPackageName>
-    <CodesignProvision>CloudCoiniOS_ADHoc</CodesignProvision>
+    <CodesignProvision>AppStore_CloudCoin</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>pdbonly</DebugType>
@@ -54,13 +54,14 @@
     <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Distribution: Sean Worthington (9M3DA6YP8B)</CodesignKey>
     <DeviceSpecificBuild>true</DeviceSpecificBuild>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
     <MtouchLink>None</MtouchLink>
     <MtouchArch>i386, x86_64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>AppStore_CloudCoin</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -81,7 +82,7 @@
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <MtouchHttpClientHandler>CFNetworkHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
-    <CodesignProvision>CloudCoiniOS_Dev</CodesignProvision>
+    <CodesignProvision>CloudCoin_ScanSafe_Dev</CodesignProvision>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -143,6 +144,8 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\CloudCoinLogoRound58ipad.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\CloudCoinLogoRound29ipad.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\CloudCoinLogoRound1024.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\CloudCoinLogoRound60.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\CloudCoinLogoRound58.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
