@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -51,13 +51,24 @@
                                                     <action selector="OnImportTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TLr-WG-ap9"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEPOSIT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVe-G6-70i">
+                                                <rect key="frame" x="0.0" y="81" width="188" height="21"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <color key="textColor" red="1" green="0.68703039297559276" blue="0.16847462613943986" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="hVe-G6-70i" firstAttribute="bottom" secondItem="qfv-Py-jlP" secondAttribute="bottom" id="4m1-rM-NSL"/>
+                                            <constraint firstItem="hVe-G6-70i" firstAttribute="trailing" secondItem="qfv-Py-jlP" secondAttribute="trailing" id="5NP-Vj-pzx"/>
                                             <constraint firstItem="qfv-Py-jlP" firstAttribute="width" secondItem="9Iv-gh-tXg" secondAttribute="width" id="5W3-MW-fox"/>
+                                            <constraint firstItem="hVe-G6-70i" firstAttribute="leading" secondItem="qfv-Py-jlP" secondAttribute="leading" id="9bM-LZ-hOF"/>
                                             <constraint firstItem="qfv-Py-jlP" firstAttribute="centerX" secondItem="9Iv-gh-tXg" secondAttribute="centerX" id="L3x-8d-6ec"/>
                                             <constraint firstItem="qfv-Py-jlP" firstAttribute="height" secondItem="9Iv-gh-tXg" secondAttribute="height" id="LGV-dt-hkI"/>
                                             <constraint firstItem="qfv-Py-jlP" firstAttribute="top" secondItem="9Iv-gh-tXg" secondAttribute="top" constant="-24" id="mJY-Nj-jmW"/>
+                                            <constraint firstItem="hVe-G6-70i" firstAttribute="height" secondItem="qfv-Py-jlP" secondAttribute="height" multiplier="1:6" id="ojE-eR-Rtz"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xOS-Wa-pwP">
@@ -70,12 +81,23 @@
                                                     <action selector="OnBankTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UeH-2L-Jer"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BANK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKn-5S-sFW">
+                                                <rect key="frame" x="0.0" y="80.5" width="188" height="21"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <color key="textColor" red="0.48627450980392156" green="0.72549019607843135" blue="0.47843137254901957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="hKn-5S-sFW" firstAttribute="bottom" secondItem="6PZ-GP-UN4" secondAttribute="bottom" id="0hK-gX-Roc"/>
+                                            <constraint firstItem="hKn-5S-sFW" firstAttribute="height" secondItem="6PZ-GP-UN4" secondAttribute="height" multiplier="1:6" id="5yg-hM-TWm"/>
                                             <constraint firstItem="6PZ-GP-UN4" firstAttribute="top" secondItem="xOS-Wa-pwP" secondAttribute="top" constant="-24" id="7vA-pL-7Z8"/>
                                             <constraint firstItem="6PZ-GP-UN4" firstAttribute="centerX" secondItem="xOS-Wa-pwP" secondAttribute="centerX" id="Ptt-c9-6er"/>
+                                            <constraint firstItem="hKn-5S-sFW" firstAttribute="leading" secondItem="6PZ-GP-UN4" secondAttribute="leading" id="T3U-nE-UZG"/>
                                             <constraint firstItem="6PZ-GP-UN4" firstAttribute="width" secondItem="xOS-Wa-pwP" secondAttribute="width" id="hBU-as-bft"/>
+                                            <constraint firstItem="hKn-5S-sFW" firstAttribute="trailing" secondItem="6PZ-GP-UN4" secondAttribute="trailing" id="ysc-0C-kLw"/>
                                             <constraint firstItem="6PZ-GP-UN4" firstAttribute="height" secondItem="xOS-Wa-pwP" secondAttribute="height" id="zJ5-Eb-7qY"/>
                                         </constraints>
                                     </view>
@@ -89,12 +111,23 @@
                                                     <action selector="OnExportTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2c1-TH-tcj"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WITHDRAW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R67-Vs-pEZ">
+                                                <rect key="frame" x="0.0" y="81" width="188" height="21"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <color key="textColor" red="0.68711932920469931" green="0.36802164095407852" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="R67-Vs-pEZ" firstAttribute="height" secondItem="Gtb-Hu-g3B" secondAttribute="height" multiplier="1:6" id="9Wi-R0-6Zl"/>
                                             <constraint firstItem="Gtb-Hu-g3B" firstAttribute="height" secondItem="IFk-K6-Nid" secondAttribute="height" id="GkV-QL-JOE"/>
+                                            <constraint firstItem="R67-Vs-pEZ" firstAttribute="leading" secondItem="Gtb-Hu-g3B" secondAttribute="leading" id="HVe-Eh-iOD"/>
+                                            <constraint firstItem="R67-Vs-pEZ" firstAttribute="trailing" secondItem="Gtb-Hu-g3B" secondAttribute="trailing" id="dU3-Ia-G3D"/>
                                             <constraint firstItem="Gtb-Hu-g3B" firstAttribute="centerX" secondItem="IFk-K6-Nid" secondAttribute="centerX" id="qdK-Rd-vpy"/>
                                             <constraint firstItem="Gtb-Hu-g3B" firstAttribute="width" secondItem="IFk-K6-Nid" secondAttribute="width" id="wxR-y5-npI"/>
+                                            <constraint firstItem="R67-Vs-pEZ" firstAttribute="bottom" secondItem="Gtb-Hu-g3B" secondAttribute="bottom" id="xzU-Wf-TMV"/>
                                             <constraint firstItem="Gtb-Hu-g3B" firstAttribute="top" secondItem="IFk-K6-Nid" secondAttribute="top" constant="-24" id="yp5-Zt-zRV"/>
                                         </constraints>
                                     </view>
