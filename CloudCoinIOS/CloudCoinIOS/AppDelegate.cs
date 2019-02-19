@@ -56,7 +56,13 @@ namespace CloudCoinIOS
             IsExistDirectory(TemplatesDir);
 			InboxDir = documentDirectory + "/" + "Inbox";
 
-			foreach (var path in pathList)
+            SaveTemplates("jpeg1.jpg");
+            SaveTemplates("jpeg5.jpg");
+            SaveTemplates("jpeg25.jpg");
+            SaveTemplates("jpeg100.jpg");
+            SaveTemplates("jpeg250.jpg");
+
+            foreach (var path in pathList)
 			{
 				var fullPath = documentDirectory + "/" + path;
 
@@ -117,7 +123,13 @@ namespace CloudCoinIOS
 			}
 		}
 
-		public override void OnResignActivation(UIApplication application)
+        private void SaveTemplates(string fileName)
+        {
+            var jpgImage = UIImage.FromFile(fileName);
+            File.WriteAllBytes(TemplatesDir + "/" + fileName, jpgImage.AsJPEG().ToArray());
+        }
+
+        public override void OnResignActivation(UIApplication application)
 		{
 			// Invoked when the application is about to move from active to inactive state.
 			// This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) 
