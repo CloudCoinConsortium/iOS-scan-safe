@@ -21,7 +21,14 @@ namespace CloudCoinIOS
 		public string LogDir { get; set; }
 		public string TemplatesDir { get; set; }
 		public string InboxDir { get; set; }
-		//public string Password { get; set; }
+
+        public string BankDir { get; set; }
+        public string CounterfeitDir { get; set; }
+        public string DetectedDir { get; set; }
+        public string ImportedDir { get; set; }
+        public string SuspectDir { get; set; }
+        public string TrashDir { get; set; }
+        //public string Password { get; set; }
 
         private NSUserDefaults userDefaults;
 
@@ -50,11 +57,24 @@ namespace CloudCoinIOS
             IsExistDirectory(ExportDir);
 			ImportDir = documentDirectory + "/" + "Import";
             IsExistDirectory(ImportDir);
-			LogDir = documentDirectory + "/" + "Log";
+			LogDir = documentDirectory + "/" + "Logs";
             IsExistDirectory(LogDir);
 			TemplatesDir = documentDirectory + "/" + "Templates";
             IsExistDirectory(TemplatesDir);
-			InboxDir = documentDirectory + "/" + "Inbox";
+            InboxDir = documentDirectory + "/" + "Inbox";
+
+            BankDir = documentDirectory + "/" + "Bank";
+            IsExistDirectory(BankDir);
+            CounterfeitDir = documentDirectory + "/" + "Counterfeit";
+            IsExistDirectory(CounterfeitDir);
+            DetectedDir = documentDirectory + "/" + "Detected";
+            IsExistDirectory(DetectedDir);
+            ImportedDir = documentDirectory + "/" + "Imported";
+            IsExistDirectory(ImportedDir);
+            SuspectDir = documentDirectory + "/" + "Suspect";
+            IsExistDirectory(SuspectDir);
+            TrashDir = documentDirectory + "/" + "Trash";
+            IsExistDirectory(TrashDir);
 
             SaveTemplates("jpeg1.jpg");
             SaveTemplates("jpeg5.jpg");
